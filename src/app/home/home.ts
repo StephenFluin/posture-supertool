@@ -212,7 +212,7 @@ export class Home {
   private async initPoseDetector() {
     // Ensure TensorFlow.js backend is ready
     await tf.ready();
-    
+
     const model = poseDetection.SupportedModels.MoveNet;
     const detectorConfig: poseDetection.MoveNetModelConfig = {
       modelType: poseDetection.movenet.modelType.SINGLEPOSE_LIGHTNING,
