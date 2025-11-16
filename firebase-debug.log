@@ -1,0 +1,73 @@
+[debug] [2025-11-16T05:54:20.303Z] ----------------------------------------------------------------------
+[debug] [2025-11-16T05:54:20.304Z] Command:       /home/stephen/.nvm/versions/node/v22.17.0/bin/node /home/stephen/.nvm/versions/node/v22.17.0/bin/firebase init
+[debug] [2025-11-16T05:54:20.304Z] CLI Version:   14.25.0
+[debug] [2025-11-16T05:54:20.304Z] Platform:      linux
+[debug] [2025-11-16T05:54:20.304Z] Node Version:  v22.17.0
+[debug] [2025-11-16T05:54:20.304Z] Time:          Sat Nov 15 2025 23:54:20 GMT-0600 (Central Standard Time)
+[debug] [2025-11-16T05:54:20.304Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-11-16T05:54:20.305Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/stephen/workspace/stephenfluin/posture-supertool
+
+[debug] [2025-11-16T05:54:20.456Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-11-16T05:54:20.457Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-11-16T05:54:25.184Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-16T05:54:25.184Z] > authorizing via signed-in user (stephen.fluin@gmail.com)
+[debug] [2025-11-16T05:54:30.034Z] Checked if tokens are valid: false, expires at: 1763188369924
+[debug] [2025-11-16T05:54:30.034Z] Checked if tokens are valid: false, expires at: 1763188369924
+[debug] [2025-11-16T05:54:30.034Z] > refreshing access token with scopes: []
+[debug] [2025-11-16T05:54:30.035Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-11-16T05:54:30.035Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-16T05:54:30.190Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-11-16T05:54:30.190Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-16T05:54:30.206Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-11-16T05:54:30.206Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"posture-supertool"}
+[debug] [2025-11-16T05:54:30.546Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-11-16T05:54:30.546Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_AVAILABLE","suggestedProjectId":"posture-supertool"}
+[debug] [2025-11-16T05:54:31.890Z] Checked if tokens are valid: true, expires at: 1763276069190
+[debug] [2025-11-16T05:54:31.890Z] Checked if tokens are valid: true, expires at: 1763276069190
+[debug] [2025-11-16T05:54:31.891Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-11-16T05:54:31.891Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"posture-supertool","name":"posture-supertool"}
+[debug] [2025-11-16T05:54:32.084Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-11-16T05:54:32.084Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.6315579409773498877"}
+[debug] [2025-11-16T05:54:32.084Z] Checked if tokens are valid: true, expires at: 1763276069190
+[debug] [2025-11-16T05:54:32.084Z] Checked if tokens are valid: true, expires at: 1763276069190
+[debug] [2025-11-16T05:54:32.084Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6315579409773498877 [none]
+[debug] [2025-11-16T05:54:32.201Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6315579409773498877 200
+[debug] [2025-11-16T05:54:32.201Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6315579409773498877 {"name":"operations/create_project.global.6315579409773498877"}
+[debug] [2025-11-16T05:54:32.701Z] [Project Creation Poller] Retrying task index 0
+[debug] [2025-11-16T05:54:32.701Z] Checked if tokens are valid: true, expires at: 1763276069190
+[debug] [2025-11-16T05:54:32.701Z] Checked if tokens are valid: true, expires at: 1763276069190
+[debug] [2025-11-16T05:54:32.701Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6315579409773498877 [none]
+[debug] [2025-11-16T05:54:32.770Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6315579409773498877 200
+[debug] [2025-11-16T05:54:32.770Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6315579409773498877 {"name":"operations/create_project.global.6315579409773498877"}
+[debug] [2025-11-16T05:54:33.770Z] [Project Creation Poller] Retrying task index 0
+[debug] [2025-11-16T05:54:33.770Z] Checked if tokens are valid: true, expires at: 1763276069190
+[debug] [2025-11-16T05:54:33.770Z] Checked if tokens are valid: true, expires at: 1763276069190
+[debug] [2025-11-16T05:54:33.770Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6315579409773498877 [none]
+[debug] [2025-11-16T05:54:33.835Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6315579409773498877 200
+[debug] [2025-11-16T05:54:33.835Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6315579409773498877 {"name":"operations/create_project.global.6315579409773498877","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"246528026698","projectId":"posture-supertool","lifecycleState":"ACTIVE","name":"posture-supertool","createTime":"2025-11-16T05:54:33.351319Z"}}
+[debug] [2025-11-16T05:54:33.836Z] Checked if tokens are valid: true, expires at: 1763276069190
+[debug] [2025-11-16T05:54:33.836Z] Checked if tokens are valid: true, expires at: 1763276069190
+[debug] [2025-11-16T05:54:33.836Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/posture-supertool:addFirebase [none]
+[debug] [2025-11-16T05:54:35.624Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/posture-supertool:addFirebase 200
+[debug] [2025-11-16T05:54:35.625Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/posture-supertool:addFirebase {"name":"operations/workflows/MWI4MTJhNzMtODI0Yy00NTY3LWE4MmItNmQ2MDE5YjY3NmQ0"}
+[debug] [2025-11-16T05:54:35.625Z] Checked if tokens are valid: true, expires at: 1763276069190
+[debug] [2025-11-16T05:54:35.625Z] Checked if tokens are valid: true, expires at: 1763276069190
+[debug] [2025-11-16T05:54:35.625Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MWI4MTJhNzMtODI0Yy00NTY3LWE4MmItNmQ2MDE5YjY3NmQ0 [none]
